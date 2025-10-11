@@ -479,3 +479,46 @@ video {
 body {
   overflow-x: hidden;
 }
+
+/* === PERBAIKAN KONTAK UNTUK HP === */
+@media (max-width: 600px) {
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    word-break: break-word;
+    width: 100%;
+  }
+
+  .contact-icon {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+
+  .contact-item span {
+    line-height: 1.4;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+.contact-info {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
