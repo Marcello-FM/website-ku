@@ -1,38 +1,44 @@
-// === Efek Welcome ===
-window.addEventListener("load", () => {
-  const name = "Marcello Frans Mardohae Pakpahan";
-  const welcomeText = `Selamat datang di website ${name}! 👋`;
-  console.log(welcomeText);
+function applyTheme() {
+  const currentTheme = localStorage.getItem('theme');
+  const profilePic = document.getElementById('profile-picture');
 
-  // Tambahkan pop-up selamat datang (sekali per sesi)
-  if (!sessionStorage.getItem("welcomeShown")) {
-    alert(welcomeText);
-    sessionStorage.setItem("welcomeShown", "true");
+  if (currentTheme === 'igris') {
+    document.body.classList.add('igris-theme');
+    if (profilePic) {
+      profilePic.src = 'download.jpeg';
+    }
+  } else {
+    document.body.classList.remove('igris-theme');
+    if (profilePic) {
+      profilePic.src = 'Fotoku.jpg';
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  applyTheme();
+
+  const profilePic = document.getElementById('profile-picture');
+  if (profilePic) {
+    profilePic.addEventListener('click', () => {
+      const currentTheme = localStorage.getItem('theme');
+      if (currentTheme === 'igris') {
+        localStorage.setItem('theme', 'normal');
+      } else {
+        localStorage.setItem('theme', 'igris');
+      }
+      applyTheme();
+    });
+  }
+
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
   }
 });
 
-// === Animasi tombol salin email ===
-const copyButton = document.querySelector(".btn");
-if (copyButton) {
-  copyButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const email = "marcellofrans@students.usu.ac.id";
-    navigator.clipboard.writeText(email)
-      .then(() => {
-        copyButton.textContent = "✅ Email Disalin!";
-        copyButton.style.backgroundColor = "#28a745";
-        setTimeout(() => {
-          copyButton.textContent = "📋 Salin Email";
-          copyButton.style.backgroundColor = "";
-        }, 2000);
-      })
-      .catch(() => {
-        alert("Gagal menyalin email!");
-      });
-  });
-}
-
-// === Tombol kembali ke atas ===
 const toTopButton = document.createElement("button");
 toTopButton.innerHTML = "⬆️";
 toTopButton.classList.add("to-top");
@@ -48,15 +54,4 @@ window.addEventListener("scroll", () => {
 
 toTopButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-// === Efek hover interaktif pada card ===
-const cards = document.querySelectorAll(".card");
-cards.forEach((card) => {
-  card.addEventListener("mouseenter", () => {
-    card.style.transform = "scale(1.02)";
-  });
-  card.addEventListener("mouseleave", () => {
-    card.style.transform = "scale(1)";
-  });
 });
