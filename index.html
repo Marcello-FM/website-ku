@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perkenalan Diri - Marcello Frans</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav class="navbar">
@@ -18,9 +19,8 @@
 
     <div class="container">
         <div class="card hero">
-            <img src="Fotoku.jpg" alt="Foto Marcello" class="profile-img-photo">
-            
-            <h1>Marcello Frans Mardohae Pakpahan</h1>
+            <img src="Fotoku.jpg" alt="Foto Marcello" class="profile-img-photo" id="profile-picture">
+            <h1 id="nama-hero">Marcello Frans Mardohae Pakpahan</h1>
             <p class="subtitle">NIM: 241401104</p>
             <p class="subtitle">Kom B</p>
         </div>
@@ -136,16 +136,9 @@
         </div>
     </div>
 
-    <script> src="script.js"
-        function copyEmail() {
-            const email = 'marcellofrans@students.usu.ac.id';
-            navigator.clipboard.writeText(email).then(function() {
-                alert('Email berhasil disalin: ' + email);
-            }, function(err) {
-                alert('Gagal menyalin email. Email: ' + email);
-            });
-        }
-    </script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>
