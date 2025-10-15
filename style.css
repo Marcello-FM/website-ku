@@ -277,6 +277,15 @@ h2 {
         align-items: center;
         gap: 15px;
     }
+      .schedule-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    -webkit-overflow-scrolling: touch;
+}
 }
 
 body.igris-theme {
@@ -292,3 +301,4 @@ body.igris-theme .profile-img-photo {
 body.igris-theme h1 {
   text-shadow: 0 0 10px var(--primary-glow);
 }
+
