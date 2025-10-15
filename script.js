@@ -18,19 +18,18 @@ function applyTheme() {
 document.addEventListener('DOMContentLoaded', () => {
   applyTheme();
 
-  const profilePic = document.getElementById('profile-picture');
-  if (profilePic) {
-    profilePic.addEventListener('click', () => {
-      const currentTheme = localStorage.getItem('theme');
-      if (currentTheme === 'igris') {
-        localStorage.setItem('theme', 'normal');
-      } else {
-        localStorage.setItem('theme', 'igris');
-      }
-      applyTheme();
-    });
-  }
-
+const themeSwitcher = document.getElementById('theme-switcher');
+if (themeSwitcher) {
+  themeSwitcher.addEventListener('click', () => {
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'igris') {
+      localStorage.setItem('theme', 'normal');
+    } else {
+      localStorage.setItem('theme', 'igris');
+    }
+    applyTheme();
+  });
+}
   if (typeof AOS !== 'undefined') {
     AOS.init({
       duration: 800,
