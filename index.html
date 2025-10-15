@@ -3,142 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perkenalan Diri - Marcello Frans</title>
+    <title>Web Marcello Frans</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav class="navbar">
-  <ul>
-    <li><a href="index.html" class="active">🏠 Beranda</a></li>
-    <li><a href="materi.html">📘 Mengenal HTML, CSS, JS & Tailwind</a></li>
-    <li><a href="tutorial.html">💻 Cara Membuat Website</a></li>
-    <li><a href="kesanpesan.html">💬 Kesan & Pesan</a></li>
-  </ul>
-</nav>
+      <ul>
+        <li><a href="#beranda">🏠 Beranda</a></li>
+        <li><a href="#materi">📘 Materi</a></li>
+        <li><a href="#tutorial">💻 Tutorial</a></li>
+        <li><a href="#kesan-pesan">💬 Kesan & Pesan</a></li>
+      </ul>
+    </nav>
 
     <div class="container">
-        <div class="card hero">
-            <img src="Fotoku.jpg" alt="Foto Marcello" class="profile-img-photo" id="profile-picture">
-            <h1 id="nama-hero">Marcello Frans Mardohae Pakpahan</h1>
-            <p class="subtitle">NIM: 241401104</p>
-            <p class="subtitle">Kom B</p>
-        </div>
+        
+        <section id="beranda">
+            <div class="card hero" id="hero-section" data-aos="fade-down">
+                <div class="profile-pic-container" id="theme-switcher">
+    <img src="Fotoku.jpg" alt="Foto Marcello" class="profile-img-photo" id="profile-picture">
+    <div class="theme-switch-icon"></div>
+</div>
+                <h1>Marcello Frans Mardohae Pakpahan</h1>
+                <p class="subtitle">NIM: 241401104</p>
+                <p class="subtitle">Kom B</p>
+            </div>
 
-        <div class="card">
-            <h2>📋 Informasi Dasar</h2>
-            <div class="info-grid">
-                <div class="info-item">
-                    <span class="info-icon">👤</span>
-                    <div class="info-title">Nama Lengkap</div>
-                    <div>Marcello Frans Mardohae Pakpahan</div>
-                </div>
-                <div class="info-item">
-                    <span class="info-icon">🎓</span>
-                    <div class="info-title">NIM</div>
-                    <div>241401104</div>
-                </div>
-                <div class="info-item">
-                    <span class="info-icon">🏠</span>
-                    <div class="info-title">Asal</div>
-                    <div>Batang Kuis, Sumatera Utara</div>
-                </div>
-                <div class="info-item">
-                    <span class="info-icon">📚</span>
-                    <div class="info-title">Program Studi</div>
-                    <div>Ilmu Komputer</div>
+            <div class="card" data-aos="fade-up">
+                <h2>📋 Informasi Dasar</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-icon">👤</span>
+                        <div class="info-title">Nama Lengkap</div>
+                        <div>Marcello Frans Mardohae Pakpahan</div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🎓</span>
+                        <div class="info-title">NIM</div>
+                        <div>241401104</div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🏠</span>
+                        <div class="info-title">Asal</div>
+                        <div>Batang Kuis, Sumatera Utara</div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📚</span>
+                        <div class="info-title">Program Studi</div>
+                        <div>Ilmu Komputer</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <h2>🎯 Hobi Saya</h2>
-            <div class="hobbi-list">
-                <div class="hobbi-item">🎮 Gaming</div>
-                <div class="hobbi-item">📖 Membaca</div>
-                <div class="hobbi-item">🎵 Musik</div>
-                <div class="hobbi-item">⚽ Olahraga</div>
-                <div class="hobbi-item">🎨 Seni</div>
-                <div class="hobbi-item">💻 Teknologi</div>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>💭 Motto Hidup</h2>
-            <div class="motto-box">
-                "Imagination is more important than knowledge."
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>🌟 Tentang Saya</h2>
-            <p class="about-text">
-                Halo! Perkenalkan, saya Marcello Frans Mardohae Pakpahan. Saya adalah mahasiswa Ilmu Komputer yang berasal dari Batang Kuis, Sumatera Utara. 
-                Saya memiliki minat yang besar terhadap dunia teknologi dan selalu antusias untuk belajar hal-hal baru.
-            </p>
-            <p class="about-text">
-                Dalam kehidupan sehari-hari, saya senang bermain game, membaca, dan belajar pemrograman. 
-                Saya percaya bahwa kerja keras dan konsistensi adalah kunci untuk mencapai kesuksesan. 
-                Ke depannya, saya berharap dapat menjadi seorang programmer yang handal.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>📅 Jadwal Kuliah</h2>
-            <table class="schedule-table">
-                <thead>
-                    <tr>
-                        <th>Hari</th>
-                        <th>Waktu</th>
-                        <th>Mata Kuliah</th>
-                        <th>Ruang</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Senin</td><td>08:50 - 10:30</td><td>Grafika Komputer</td><td>D-106</td></tr>
-                    <tr><td>Senin</td><td>Belum Diset</td><td>Praktikum Grafika Komputer</td><td>-</td></tr>
-                    <tr><td>Senin</td><td>10:30 - 12:10</td><td>Desain Interaksi</td><td>C-101</td></tr>
-                    <tr><td>Rabu</td><td>13:50 - 15:30</td><td>Wirausaha Digital</td><td>D-101</td></tr>
-                    <tr><td>Rabu</td><td>10:30 - 13:00</td><td>Basis Data</td><td>D-106</td></tr>
-                    <tr><td>Rabu</td><td>Belum Diset</td><td>Praktikum Basis Data</td><td>-</td></tr>
-                    <tr><td>Kamis</td><td>08:00 - 10:30</td><td>Struktur Data</td><td>D-105</td></tr>
-                    <tr><td>Kamis</td><td>Belum Diset</td><td>Praktikum Struktur Data</td><td>-</td></tr>
-                    <tr><td>Kamis</td><td>12:10 - 14:40</td><td>Pemrograman Web</td><td>D-105</td></tr>
-                    <tr><td>Kamis</td><td>Belum Diset</td><td>Praktikum Pemrograman Web</td><td>-</td></tr>
-                    <tr><td>Selasa</td><td>13:00 - 14:40</td><td>Digital Bisnis</td><td>CHAMPION</td></tr>
-                    <tr><td>Jumat</td><td>13:00 - 15:30</td><td>Kecerdasan Buatan</td><td>D-101</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="card" style="text-align: center;">
-            <h2>📞 Kontak</h2>
-            <p style="margin-bottom: 20px;">Terima kasih sudah mengunjungi website saya!</p>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="contact-icon">📧</span>
-                    <span><strong>Email:</strong> marcellofrans@students.usu.ac.id</span>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">🎓</span>
-                    <span><strong>Universitas:</strong> Universitas Sumatera Utara</span>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📍</span>
-                    <span><strong>Lokasi:</strong> Batang Kuis, Sumatera Utara</span>
+            <div class="card" data-aos="fade-up">
+                <h2>🎯 Hobi Saya</h2>
+                <div class="hobbi-list">
+                    <div class="hobbi-item">🎮 Gaming</div>
+                    <div class="hobbi-item">📖 Membaca</div>
+                    <div class="hobbi-item">🎵 Musik</div>
+                    <div class="hobbi-item">⚽ Olahraga</div>
+                    <div class="hobbi-item">🎨 Seni</div>
+                    <div class="hobbi-item">💻 Teknologi</div>
                 </div>
             </div>
-            
-            <p style="margin: 20px 0;">Mari kita berkenalan lebih lanjut 😊</p>
-            
-            <a href="#" onclick="copyEmail()" class="btn">📋 Salin Email</a>
-        </div>
+
+            <div class="card" data-aos="fade-up">
+                <h2>💭 Motto Hidup</h2>
+                <div class="motto-box">
+                    "Imagination is more important than knowledge."
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <h2>🌟 Tentang Saya</h2>
+                <p class="about-text">
+                    Halo! Perkenalkan, saya Marcello Frans Mardohae Pakpahan. Saya adalah mahasiswa Ilmu Komputer yang berasal dari Batang Kuis, Sumatera Utara. 
+                    Saya memiliki minat yang besar terhadap dunia teknologi dan selalu antusias untuk belajar hal-hal baru.
+                </p>
+                <p class="about-text">
+                    Dalam kehidupan sehari-hari, saya senang bermain game, membaca, dan belajar pemrograman. 
+                    Saya percaya bahwa kerja keras dan konsistensi adalah kunci untuk mencapai kesuksesan. 
+                    Ke depannya, saya berharap dapat menjadi seorang programmer yang handal.
+                </p>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <h2>📅 Jadwal Kuliah</h2>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Waktu</th>
+                            <th>Mata Kuliah</th>
+                            <th>Ruang</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Senin</td><td>08:50 - 10:30</td><td>Grafika Komputer</td><td>D-106</td></tr>
+                        <tr><td>Senin</td><td>Belum Diset</td><td>Praktikum Grafika Komputer</td><td>-</td></tr>
+                        <tr><td>Senin</td><td>10:30 - 12:10</td><td>Desain Interaksi</td><td>C-101</td></tr>
+                        <tr><td>Rabu</td><td>13:50 - 15:30</td><td>Wirausaha Digital</td><td>D-101</td></tr>
+                        <tr><td>Rabu</td><td>10:30 - 13:00</td><td>Basis Data</td><td>D-106</td></tr>
+                        <tr><td>Rabu</td><td>Belum Diset</td><td>Praktikum Basis Data</td><td>-</td></tr>
+                        <tr><td>Kamis</td><td>08:00 - 10:30</td><td>Struktur Data</td><td>D-105</td></tr>
+                        <tr><td>Kamis</td><td>Belum Diset</td><td>Praktikum Struktur Data</td><td>-</td></tr>
+                        <tr><td>Kamis</td><td>12:10 - 14:40</td><td>Pemrograman Web</td><td>D-105</td></tr>
+                        <tr><td>Kamis</td><td>Belum Diset</td><td>Praktikum Pemrograman Web</td><td>-</td></tr>
+                        <tr><td>Selasa</td><td>13:00 - 14:40</td><td>Digital Bisnis</td><td>CHAMPION</td></tr>
+                        <tr><td>Jumat</td><td>13:00 - 15:30</td><td>Kecerdasan Buatan</td><td>D-101</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="materi">
+            <div class="card" data-aos="fade-up">
+              <h2>📘 Mengenal HTML, CSS, JavaScript, dan Tailwind</h2>
+              <p><strong>HTML</strong> adalah bahasa dasar untuk membangun struktur halaman web, seperti teks, gambar, dan tautan.</p>
+              <p><strong>CSS</strong> digunakan untuk mempercantik tampilan web: warna, tata letak, dan animasi.</p>
+              <p><strong>JavaScript</strong> membuat website menjadi interaktif dan dinamis — contohnya tombol, efek klik, atau validasi form.</p>
+              <p><strong>Tailwind CSS</strong> adalah framework CSS modern berbasis utility classes, membuat desain cepat dan efisien tanpa menulis CSS dari nol.</p>
+            </div>
+        </section>
+
+        <section id="tutorial">
+            <div class="card" data-aos="fade-up">
+              <h2>💻 Tata Cara Membuat Website Sederhana</h2>
+              <ol>
+                <li>Buka teks editor seperti VS Code atau Notepad++.</li>
+                <li>Buat file <code>index.html</code> dan <code>style.css</code>.</li>
+                <li>Tulis struktur HTML dasar di <code>index.html</code>.</li>
+                <li>Tulis gaya tampilan di <code>style.css</code>.</li>
+                <li>Hubungkan keduanya dengan tag <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>.</li>
+                <li>Buka file <code>index.html</code> di browser untuk melihat hasilnya.</li>
+              </ol>
+            </div>
+        </section>
+
+        <section id="kesan-pesan">
+            <div class="card" data-aos="fade-up">
+              <h2>💬 Kesan dan Pesan</h2>
+              <p>Kesan saya selama belajar pemrograman web sangat menyenangkan karena saya bisa melihat langsung hasil dari setiap baris kode yang saya tulis.</p>
+              <p>Saya belajar bahwa kesabaran dan logika berpikir sangat penting. Meskipun sempat kesulitan di awal, lama-lama saya mulai menikmati prosesnya.</p>
+              <p>Pesan saya: teruslah belajar dan eksplorasi — dunia web sangat luas dan selalu berkembang!</p>
+            </div>
+        </section>
+        
+        <section id="kontak">
+            <div class="card" data-aos="fade-up" style="text-align: center;">
+                <h2>📞 Kontak</h2>
+                <p style="margin-bottom: 20px;">Terima kasih sudah mengunjungi website saya!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span><strong>Email:</strong> marcellofrans@students.usu.ac.id</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🎓</span>
+                        <span><strong>Universitas:</strong> Universitas Sumatera Utara</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span><strong>Lokasi:</strong> Batang Kuis, Sumatera Utara</span>
+                    </div>
+                </div>
+                <p style="margin: 20px 0;">Mari kita berkenalan lebih lanjut 😊</p>
+                <a href="#" class="btn">📋 Salin Email</a>
+            </div>
+        </section>
+
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
-</body>
-</html>
 </body>
 </html>
